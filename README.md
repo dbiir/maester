@@ -55,7 +55,7 @@ clone下来之后，会有一个maester目录，这是maester的根目录，下�
 
 建议大家开题之后就开始维护一个domain，毕业的时候完成这个domain。
 
-根目录下除了domain目录，还有一个INDEX.md文件，这是所有domain的索引文档，里面列出所有的domain，并分别用一段话描述每一个domain是什么、和其他domain有什么关系。
+根目录下除了domain目录，还有一个Introduction.md文件，这是所有domain的索引文档，里面列出所有的domain，并分别用一段话描述每一个domain是什么、和其他domain有什么关系。
 
 在一个domain目录下，有若干个markdown文档，每个markdown文档是一个topic。topic可以是一个非常具体的问题或者一篇论文的总结等。
 
@@ -64,5 +64,5 @@ clone下来之后，会有一个maester目录，这是maester的根目录，下�
 topic文档中可以分段，注意每一段只说一个事情，每段第一句话交代本段的关键内容。段落中必须是客观描述，描述务必准确、不要有歧义或指代不清。
 每一段的末尾要集中列出该段中用到的参考文献。
 
-每一个domain目录下还有一个INDEX.md文件和一个REF.md文件。INDEX.md是该domain的索引文档列出该domain下的所有topic，并像写综述那要去把topics组织成一个有逻辑的连贯的文档。
+每一个domain目录下还有一个Introduction.md文件和一个Reference.md文件。Introduction.md是该domain的索引文档列出该domain下的所有topic，并像写综述那要去把topics组织成一个有逻辑的连贯的文档。
 REF.md中列出该domain中用到的所有参考文献，并分别简要描述各个参考文件所做的内容以及在哪些topic中被引用了，这相当于是该domain下的一个reading list。
