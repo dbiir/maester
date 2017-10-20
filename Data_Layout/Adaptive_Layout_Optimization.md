@@ -17,10 +17,8 @@ AutoStore[1]中提出了Online Partitioning问题，其实就是ALO。这篇论�
 
 
 H2O[2]是比较早地提出Adaptive Store的论文（虽然Data Morphing[5]更早提出Adaptive Store，但是并没有考虑Workload的变化，只是针对某个特定Workload做优化，严格来讲不算是Adaptive）。
-这篇论文当中第3章介绍了通过做[Column Grouping(3)](%base_url%/DataLayout/ColumnGroup)在[Row Store(2)](%base_url%/DataLayout/RowStore)、
-[Column Store(1)](%base_url%/DataLayout/ColumnStore)之间进行权衡，也就是通常所说的行列混合。
-然后在查询执行时根据Layout选择一个最佳的执行计划。
-论文第3.2节中也给出了一个Workload Monitoring的方案：
+这篇论文当中第3章介绍了通过做Column Grouping(3)在Row Store(2)、Column Store(1)之间进行权衡，也就是通常所说的行列混合。
+然后在查询执行时根据Layout选择一个最佳的执行计划。论文第3.2节中也给出了一个Workload Monitoring的方案：
 收集查询的Access Pattern，统计Column在查询中被共同访问的频率。SELECT子句和WHERE子句中出现的Column会用两个矩阵分别进行访问的统计。
 被共同访问且访问频率相近的Column会被Co-locate到一起。论文中使用了定长的Window Size来控制所监测的查询个数，从而控制矩阵的大小。
 
@@ -40,7 +38,7 @@ CMU [Peloton](http://pelotondb.io/)团队也做了ALO方面的工作[3]，
 
 除了Workload Monitoring，[[4]](http://db.cs.cmu.edu/papers/2017/p42-pavlo-cidr17.pdf) 中用了机器学习（RNN）对未来的查询负载进行预测。
 这篇论文中没有去讨论Layout的优化问题，但是在Related Works中比较详细地讨论了Workload Modeling问题。详细内容在
-[Self-Tuning DBMS(4)](%base_url%/SelftuningDBMS/Introduction)中讨论。
+Self-tuning(4)中讨论。
 
 > **References**\
 > [1] Relax and Let the Database Do the Partitioning Online, BIRTE 11\
@@ -51,7 +49,7 @@ CMU [Peloton](http://pelotondb.io/)团队也做了ALO方面的工作[3]，
 > [6] Trojan Data Layouts: Right Shoes for a Running Elephant, SOCC 11
 
 > **Linked Topics**\
-> (1) DataLayout/ColumnStore\
-> (2) DataLayout/RowStore\
-> (3) DataLayout/ColumnGroup\
-> (4) SelftuningDBMS/Introduction
+> (1) Data_Layout/Column_Store\
+> (2) Data_Layout/Row_Store\
+> (3) Data_Layout/Column_Group\
+> (4) Self-tuning/Introduction
