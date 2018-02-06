@@ -1,4 +1,4 @@
-# Data Compression
+# HDFS Data Compression
 
 > **Abstract**\
 > HDFS上的数据可以采用一些压缩算法进行压缩。常用的压缩算法包括Snappy, LZO, 
